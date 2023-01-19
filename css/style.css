@@ -1,7 +1,11 @@
 :root {
+  --brand-color: #4d5ae5;
   --main-color: #2e2f42;
   --secondary-color: #434455;
-  --third-color: #404bbf;
+  --additional-one-color: #404bbf;
+  --additional-two-color: #f4f4fd;
+  --additional-three-color: #ffffff;
+  --additional-four-color: #e7e9fc;
   --main-size: 16px;
   --main-font-weight: 500;
   --title-font-weight: 700;
@@ -25,6 +29,19 @@ body {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* =========================== /cl ===========================*/
 
 /* =========================== Header ===========================*/
@@ -49,7 +66,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--brand-color);
 }
 .header-list {
 }
@@ -62,7 +79,7 @@ body {
 
 .header-item:hover,
 .header-item:focus {
-  color: var(--third-color);
+  color: var(--additional-one-color);
 }
 .address {
 }
@@ -76,21 +93,21 @@ body {
 }
 .address-item:hover,
 .address-item:focus {
-  color: var(--third-color);
+  color: var(--additional-one-color);
 }
 
 .studio {
   font-weight: var(--main-font-weight);
   font-size: var(--main-size);
   line-height: 1.5;
-  color: var(--third-color);
+  color: var(--additional-one-color);
 }
 
 .portfolio {
   font-weight: var(--main-font-weight);
   font-size: var(--main-size);
   line-height: 1.5;
-  color: var(--third-color);
+  color: var(--additional-one-color);
 }
 
 /* =========================== Header ===========================*/
@@ -105,7 +122,7 @@ body {
   font-weight: var(--title-font-weight);
   font-size: 56px;
   line-height: 1.07;
-  color: #ffffff;
+  color: var(--additional-three-color);
 }
 .hero-btn {
   font-weight: var(--main-font-weight);
@@ -113,22 +130,19 @@ body {
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--additional-two-color);
+  background-color: var(--brand-color);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--additional-one-color);
 }
 
 /* =========================== /Hero ===========================*/
 
 /* =========================== Our Features ===========================*/
 
-.features-title {
-  color: rgba(0, 0, 0, 0);
-}
 .features-list {
 }
 .list {
@@ -150,7 +164,7 @@ body {
 
 /* =========================== Our works ===========================*/
 
-.works-title {
+.section-title {
   font-weight: var(--title-font-weight);
   font-size: 36px;
   line-height: 1.11;
@@ -170,19 +184,13 @@ body {
 /* =========================== Our team ===========================*/
 
 .team-section {
-  background-color: #f4f4fd;
+  background-color: var(--additional-two-color);
 }
 
-.team-title {
-  font-weight: var(--title-font-weight);
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-}
 .team-list {
 }
 .team-member {
-  background-color: #ffffff;
+  background-color: var(--additional-three-color);
 }
 .team-photo {
 }
@@ -206,13 +214,13 @@ body {
 }
 
 .logo-footer {
-  color: #f4f4fd;
+  color: var(--additional-two-color);
 }
 
 .footer-text {
   font-size: var(--main-size);
   line-height: 1.5;
-  color: #e7e9fc;
+  color: var(--additional-four-color);
 }
 /* =========================== /Footer ===========================*/
 
@@ -222,9 +230,6 @@ Portfolio
 
 .portfolio-section {
 }
-.portfolio-title {
-  color: rgba(0, 0, 0, 0);
-}
 
 /* =========================== Filters btn ===========================*/
 
@@ -233,27 +238,28 @@ Portfolio
 .filters-item {
 }
 .filters-btn {
-  background-color: #f4f4fd;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--additional-two-color);
   font-weight: var(--main-font-weight);
   font-size: var(--main-size);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  border: 1px solid #e7e9fc;
+  color: var(--brand-color);
+  border: 1px solid var(--additional-four-color);
   border-radius: 4px;
   cursor: pointer;
 }
 .filters-btn:hover,
 .filters-btn:focus {
-  background-color: var(--third-color);
-  color: #ffffff;
+  background-color: var(--additional-one-color);
+  color: var(--additional-three-color);
 }
 
 /* =========================== /Filters btn ===========================*/
 
 /* =========================== results ===========================*/
 
-.our-works-list {
+.results-list {
 }
 .results-item {
 }
