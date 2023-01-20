@@ -8,13 +8,12 @@
   --additional-four-color: #e7e9fc;
   --main-size: 16px;
   --main-font-weight: 500;
-  --title-font-weight: 700;
 }
 
 /* =========================== body ===========================*/
 body {
   font-family: 'Roboto', sans-serif;
-  color: #2e2f42;
+  color: var(--main-color);
   letter-spacing: 0.02em;
 }
 
@@ -119,19 +118,19 @@ body {
 }
 
 .main-title {
-  font-weight: var(--title-font-weight);
   font-size: 56px;
   line-height: 1.07;
+  text-align: center;
   color: var(--additional-three-color);
 }
 .hero-btn {
   font-weight: var(--main-font-weight);
   font-size: var(--main-size);
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--additional-two-color);
   background-color: var(--brand-color);
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -165,9 +164,9 @@ body {
 /* =========================== Our works ===========================*/
 
 .section-title {
-  font-weight: var(--title-font-weight);
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   text-transform: capitalize;
 }
 .works-list {
